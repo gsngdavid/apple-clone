@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    * {
+        font-family: 'sf-pro-text_regular', "Helvetica Neue","Helvetica","Arial",sans-serif;
+        box-sizing: border-box;
+    }
+
+    .container {
+        @apply mx-auto
+    }
+
+    .nav-link {
+        @apply text-[12px] whitespace-nowrap text-light-dark hover:text-black font-sf-pro-text_semibold
+    }
+
+    .link {
+        @apply flex gap-1 items-center text-primary-blue hover:underline
+    }
+
+    .link-span {
+        @apply block transform -rotate-45 border-primary-blue border-r-[2px] border-b-[2px]
+    }
+
+    section {
+        @apply my-3
+    }
+} 
+
+@font-face {
+    font-family: 'sf-pro-text_semibold';
+    src: url("../fonts/sf-pro-text_semibold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'sf-pro-text_regular';
+    src: url("../fonts/sf-pro-text_regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'sf-pro-text_bold';
+    src: url("../fonts/sf-pro-text_bold.woff2") format('woff2');
+}
